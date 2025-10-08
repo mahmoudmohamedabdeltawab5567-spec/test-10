@@ -1,0 +1,746 @@
+/****** Global style  ******/
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: #3367D1;
+  color: #fff;
+}
+:root {
+  --main-color: #0b221bff;
+  --bg-light-grey: #20c997;
+}
+@font-face {
+  font-family: Poppins-400;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: Poppins-400;
+}
+@font-face {
+  font-family: Montserrat-800;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat-800;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.main-color {
+  background-color: var(--bg-light-grey);
+}
+.bg-light-grey {
+  color: var(--bg-light-grey);
+}
+ul {
+  list-style-type: none;
+}
+.title h3 {
+  z-index: 4 !important;
+  display: inline-block;
+}
+
+  .title h3::after {
+  content: "";
+  width: 90%;
+  height: 12px;
+  border-bottom: 5px dotted #e5e5e5;
+  border-top: 5px dotted #e5e5e5;
+  
+  
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.title h3::before {
+  content: "";
+  width: 92%;
+  height: 12px;
+
+  border-top: 5px dotted #e5e5e5;
+
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}  
+
+
+
+/****** End Global style ******/
+
+/****** Start Nav style ******/
+.my-nav .nav-link.active::after {
+  content: "";
+  width: 78%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+}
+.my-nav .nav-link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+}
+.my-nav .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  display: block;
+  transform: translateX(-50%);
+  transition: width 0.5s;
+}
+.my-nav .nav-link:hover::after {
+  width: 78%;
+}
+
+/****** End Nav style ******/
+
+/****** Start herder style ******/
+.home {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%),
+    url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home h1 {
+  font-weight: 200;
+  font-style: 60px;
+}
+.home h1 span {
+  font-weight: 400;
+}
+.home h1::after {
+  content: "";
+  animation: typing 10s infinite ease-in;
+  font-weight: 400;
+}
+/* larry Daniels */
+@keyframes typing {
+  0% {
+    content: " D|";
+  }
+
+  0.5% {
+    content: "De|";
+  }
+
+  1% {
+    content: "Des|";
+  }
+
+  1.5% {
+    content: "Desi|";
+  }
+
+  2% {
+    content: "Desig|";
+  }
+
+  2.5% {
+    content: "Design|";
+  }
+
+  3% {
+    content: "Designe|";
+  }
+
+  3.5% {
+    content: "Designer|";
+  }
+
+  20% {
+    content: "Designer|";
+  }
+
+  20.1% {
+    content: "Designe|";
+  }
+
+  20.2% {
+    content: "Desig|";
+  }
+
+  20.3% {
+    content: "Desi|";
+  }
+
+  2.4% {
+    content: "Des|";
+  }
+
+  20.5% {
+    content: "De|";
+  }
+
+  20.6% {
+    content: "D|";
+  }
+   21.5% {
+    content: "|";
+  }
+
+  22.5% {
+    content: "De|";
+  }
+
+  23.5% {
+    content: "Dev|";
+  }
+
+  24% {
+    content: "Deve|";
+  }
+
+  24.5% {
+    content: "Devel|";
+  }
+
+  24.7% {
+    content: "Develo|";
+  }
+
+  25% {
+    content: "Develop|";
+  }
+
+  25.5% {
+    content: "Develope|";
+  }
+
+  26% {
+    content: "Developer|";
+  }
+
+  40% {
+    content: "Developer|";
+  }
+
+  40.5% {
+    content: "Develope|";
+  }
+
+  41% {
+    content: "Develop|";
+  }
+
+  41.2% {
+    content: "Develo|";
+  }
+  41.5% {
+    content: "Devel|";
+  }
+
+  42% {
+    content: "Deve|";
+  }
+
+  42.5% {
+    content: "Dev|";
+  }
+
+  43% {
+    content: "De|";
+  }
+
+  43.5% {
+    content: "D|";
+  }
+
+  44% {
+    content: "L|";
+  }
+
+  44.5% {
+    content: "la|";
+  }
+
+  45% {
+    content: "lar|";
+  }
+
+  45.5% {
+    content: "larry|";
+  }
+
+  46% {
+    content: "larry |";
+  }
+
+  47% {
+    content: "larry d|";
+  }
+
+  47.5% {
+    content: "larry da|";
+  }
+
+  48% {
+    content: "larry dan|";
+  }
+
+  48.5% {
+    content: "larry dani|";
+  }
+
+  49% {
+    content: "larry danie|";
+  }
+
+  50% {
+    content: "larry daniel|";
+  }
+
+  65% {
+    content: "larry daniel|";
+  }
+
+  65.5% {
+    content: "larry daniel|";
+  }
+
+  66% {
+    content: "larry danie|";
+  }
+
+  67.5% {
+    content: "larry dani|";
+  }
+
+  68% {
+    content: "larry dan|";
+  }
+
+  68.5% {
+    content: "larry da|";
+  }
+
+  69% {
+    content: "larry d|";
+  }
+
+  69.5% {
+    content: "larry |";
+  }
+
+  70% {
+    content: "larry|";
+  }
+
+  70.5% {
+    content: "larr";
+  }
+
+  71% {
+    content: "lar|";
+  }
+
+  71.5% {
+    content: "la|";
+  }
+
+  72% {
+    content: "l|";
+  }
+  72.5% {
+    content: " D|";
+  }
+
+  73% {
+    content: "De|";
+  }
+
+  73.5% {
+    content: "Des|";
+  }
+
+  74% {
+    content: "Desi|";
+  }
+
+  74.5% {
+    content: "Desig|";
+  }
+
+  75% {
+    content: "Design|";
+  }
+
+  75.5% {
+    content: "Designe|";
+  }
+
+  76% {
+    content: "Designer|";
+  }
+
+  95% {
+    content: "Designer|";
+  }
+
+  95.5% {
+    content: "Designe|";
+  }
+  95.7% {
+    content: "Design|";
+  }
+  96% {
+    content: "Desig|";
+  }
+
+  96.5% {
+    content: "Desi|";
+  }
+
+  97% {
+    content: "Des|";
+  }
+
+  98% {
+    content: "De|";
+  }
+
+  100% {
+    content: "D|";
+  }
+
+  /* Restart cleanly */
+}
+.home .icons .icon i {
+  font-size: 12px;
+}
+
+/****** End header style ******/
+
+/****** Start about style ******/
+.about .img .dotes {
+  position: absolute;
+  top: 30%;
+  left: -37px;
+  width: 92%;
+  height: 75%;
+  background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 12px 12px;
+  z-index: -1;
+}
+.about h3 {
+  font-weight: 800;
+  font-size: 32px;
+}
+.about p {
+  color: #748182;
+  font-size: 15px;
+ 
+}
+.about p span{
+  font-size: 18px ;
+  font-weight: 700;
+}
+.about .span-1 {
+  color: #999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  word-spacing: 5px;
+}
+.about .bttn {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+.about .bttn:hover {
+  background-color: #fff;
+  color: #343434;
+}
+/****** End about style ******/
+
+/****** Start Services Style ******/
+.services {
+  background-color: #f7f7f7;
+}
+.services .icons {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  transition: all 1s;
+}
+.services .icons i {
+  font-size: 25px;
+}
+.services .my-hov:hover .icons {
+  background-color: #000;
+  color: #fff;
+}
+
+/****** End Services style ******/
+
+/****** start works style ******/
+.works .layer {
+  position: relative;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: #ffffffe6 ;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.works .imge:hover .layer {
+  opacity: 1;
+  /* border: 6px solid #e7e7e7c4; */
+}
+.works .layer h6 {
+  position: absolute;
+  bottom: 40%;
+  left: 37%;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.works .layer .icons {
+  position: absolute;
+  bottom: 40%;
+  left: 42%;
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
+.works .layer .icons .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+}
+
+.works .layer .icon:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.works .layer .icon:hover i {
+  color: #000;
+}
+.works .layer .icons .icon i {
+  font-size: 14px;
+}
+.works .layer:hover .icons {
+  transform: translateY(0);
+}
+.works .layer:hover h6 {
+  transform: translateY(0);
+}
+
+.works .nav-link {
+  color: #000;
+}
+
+/****** End works style ******/
+
+/****** Start Clients style ******/
+.clients {
+  background-color: #f7f7f7;
+}
+
+.clients .carousel-indicators .active {
+  background-color: #343434;
+}
+.clients .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+/****** End Clients style ******/
+
+/****** Start fifth style ******/
+.fifth-section .icon i {
+  color: #343434;
+}
+.fifth-section h3 {
+  color: #343434;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/****** End fifth style ******/
+
+/****** Start team style ******/
+.team .img .layer {
+  width: 97%;
+  height: 97%;
+  margin: auto;
+  position: absolute;
+  inset: 0;
+  background-color: #fefefe;
+  opacity: 0;
+  transition: all 1s;
+}
+.team .inner {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+.team .inner .text h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.team .inner .text h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.team .inner .img img {
+  transition: all 0.5s;
+}
+.team .inner .img:hover img {
+  transform: scale(1.2);
+}
+.team .inner:hover .layer {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+.team .inner:hover .icons {
+  transform: rotateY(180deg);
+ 
+}
+.team .inner .icons{
+   transition:  transform 1s;
+}
+.team .inner .layer .icon {
+  width: 45px;
+  height: 45px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+}
+.team .inner .layer .icon:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+/****** End team style ******/
+
+/****** Start contact style ******/
+.contact .inner:hover .icon {
+  background-color: #000;
+  color: #fff;
+}
+.contact .icon {
+  width: 65px;
+  height: 65px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.contact .icon i {
+  font-size: 23px;
+}
+
+.contact .input input {
+  padding: 12px 7px;
+  border: none;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact .my-text {
+  border: none;
+  background-color: #f4f4f4;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+.contact .bttn {
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.contact .bttn:hover {
+  background-color: #fff;
+  color: #343434;
+}
+/****** End contact style ******/
+
+/****** Start footer style ******/
+.footer {
+  background-color: #1c1c1c;
+}
+.footer p {
+  font-size: 14px;
+  color: #748182;
+  word-spacing: 3px;
+}
+/****** End footer style ******/
+
+
+
+
+@media screen and (min-width:768px) {
+
+
+    .about .img .dotes {
+  position: absolute;
+  top: 30%;
+  left: -37px;
+  width: 92%;
+  height: 74%;
+  background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 12px 12px;
+  z-index: -1;
+}
+
+}
+
+@media screen and (min-width:992px) {
+    /* .about .img .dotes{
+    position: absolute;
+    top: 30%;
+    left: -35px;
+    width: 450px;
+    height: 470px;
+    background-image:radial-gradient(#E5E5E5 1px , transparent  1px );
+    background-size: 12px 12px ;
+    z-index: -1;
+
+} */
+
+.about .img .dotes {
+  position: absolute;
+  top: 30%;
+  left: -37px;
+  width: 92%;
+  height: 78%;
+  background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 12px 12px;
+  z-index: -1;
+}
+
+}
